@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LinearSnapHelperActivity"></activity>
+        <activity android:name=".LinearSnapHelperActivity" />
+        <activity android:name=".PageSnapHelperActivity"></activity>
     </application>
 
 </manifest>
