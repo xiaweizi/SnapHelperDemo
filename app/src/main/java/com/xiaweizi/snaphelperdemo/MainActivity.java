@@ -20,4 +20,8 @@ public class MainActivity extends AppCompatActivity {
     public void pageSnap(View view) {
         startActivity(new Intent(this, PageSnapHelperActivity.class));
     }
+
+    public void gravitySnap(View view) {
+        startActivity(new Intent(this, GravitySnapHelperActivity.class));
+    }
 }

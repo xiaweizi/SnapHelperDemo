@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".LinearSnapHelperActivity" />
-        <activity android:name=".PageSnapHelperActivity"></activity>
+        <activity android:name=".PageSnapHelperActivity" />
+        <activity android:name=".GravitySnapHelperActivity"></activity>
     </application>
 
 </manifest>

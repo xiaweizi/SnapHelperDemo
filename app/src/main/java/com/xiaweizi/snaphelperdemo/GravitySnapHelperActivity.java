@@ -3,11 +3,13 @@ package com.xiaweizi.snaphelperdemo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.PagerSnapHelper;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SnapHelper;
+import android.view.Gravity;
 
-public class PageSnapHelperActivity extends AppCompatActivity {
+import com.xiaweizi.snaphelperdemo.gravity.GravitySnapHelper;
+
+public class GravitySnapHelperActivity extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;
     @Override
@@ -18,7 +20,7 @@ public class PageSnapHelperActivity extends AppCompatActivity {
         CommonAdapter adapter = new CommonAdapter();
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         mRecyclerView.setAdapter(adapter);
-        SnapHelper snapHelper = new PagerSnapHelper();
+        SnapHelper snapHelper = new GravitySnapHelper(Gravity.START);
         snapHelper.attachToRecyclerView(mRecyclerView);
     }
 }

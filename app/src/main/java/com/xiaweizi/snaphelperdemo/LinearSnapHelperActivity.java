@@ -13,7 +13,7 @@ public class LinearSnapHelperActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_linear_snap_helper);
+        setContentView(R.layout.activity_common_snap);
         mRecyclerView = findViewById(R.id.recyclerView);
         CommonAdapter adapter = new CommonAdapter();
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
